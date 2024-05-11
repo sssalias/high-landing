@@ -4,7 +4,7 @@ body {
 
 .main-wrapper {
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
 }
 
 header {
@@ -46,11 +46,6 @@ main {
   gap: 40px;
   padding-right: 20%;
 }
-.offer .offer-content .offer-content-text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 .offer .offer-content .offer-payment {
   display: flex;
   gap: 28px;
@@ -73,8 +68,34 @@ main {
   align-items: flex-start;
   gap: 60px;
 }
-.about .about-content .about-content-text {
+
+.work .work-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.work .work-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 60px;
+}
+.work .work-content .work-list-container {
+  width: 80%;
+}
+.work .work-content .work-list-container .work-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.work .work-content .work-list-container .work-list .work-list-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  height: auto;
+}
+.work .work-content .work-list-container .work-list .work-list-item .work-list-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=index.css.map */

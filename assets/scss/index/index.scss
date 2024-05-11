@@ -5,7 +5,7 @@ body {
 .main-wrapper {
     margin: 0 auto;
     // width: 87.5%;
-    width: 80%;
+    width: 75%;
 }
 
 // header
@@ -60,11 +60,6 @@ main {
         gap: 40px;
         padding-right: 20%;
 
-        .offer-content-text {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
         .offer-payment {
             display: flex;
             gap: 28px;
@@ -92,10 +87,43 @@ main {
         align-items: flex-start;
         gap: 60px;
 
-        .about-content-text {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+    }
+}
+
+
+// how it works
+.work {
+    .work-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .work-content {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .work-list-container {
+            width: 80%;
+            .work-list {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+
+                .work-list-item {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 28px;
+                    height: auto;
+
+                    .work-list-item-content {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    } 
+                }
+            }
         }
     }
 }

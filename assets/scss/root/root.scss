@@ -119,3 +119,9 @@ form {
         width: 10px;
     }
 }
+
+.section-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
