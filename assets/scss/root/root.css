@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "NeueMachina Regular";
+  src: local("NeueMachina Regular"), url(../../fonts/NeueMachina-Regular.ttf);
+}
+:root {
+  --main-bg: #F0F0F0;
+  --main-black: #151515;
+  --main-white: #FFFFFF;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* {
+  color: var(--main-black);
+  font-family: "NeueMachina Regular" !important;
+}
+
+h1 {
+  font-size: calc(52px + 18 * (100vw - 320px) / 1280);
+}
+
+h2 {
+  font-size: calc(44px + 16 * (100vw - 320px) / 1280);
+}
+
+h3 {
+  font-size: calc(28px + 0 * (100vw - 320px) / 1280);
+}
+
+li {
+  font-size: calc(20px + 0 * (100vw - 320px) / 1280);
+}
+
+span, p, a, button, input {
+  font-size: calc(18px + 0 * (100vw - 320px) / 1280);
+}
+
+.button {
+  cursor: pointer;
+  padding: 14px 20px;
+  border: none;
+  border-radius: none;
+}
+
+.button-white {
+  background-color: var(--main-white);
+}
+
+.button-black {
+  color: white;
+  background-color: var(--main-black);
+}
+
+input {
+  border: none;
+  border-radius: none;
+  background-color: var(--main-white);
+  padding: 14px 193px 14px 16px;
+  line-height: 24px;
+  outline: none;
+}
+input::-moz-placeholder {
+  color: var(--main-black);
+}
+input::placeholder {
+  color: var(--main-black);
+}
+
+form {
+  display: flex;
+}/*# sourceMappingURL=root.css.map */

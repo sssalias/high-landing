@@ -1,0 +1,80 @@
+@import '../mixins/font';
+
+@font-face {
+    font-family: 'NeueMachina Regular';
+    src: local('NeueMachina Regular'), url(../../fonts/NeueMachina-Regular.ttf);
+}
+
+:root {
+    --main-bg: #F0F0F0;
+    --main-black: #151515;
+    --main-white: #FFFFFF;
+}
+
+img {
+    object-fit: cover;
+}
+
+* {
+    color: var(--main-black);
+    font-family: 'NeueMachina Regular' !important;
+}
+
+h1 {
+    @include adaptive-font(70, 52);
+}
+h2 {
+    @include adaptive-font(60, 44);
+}
+
+h3 {
+    @include adaptive-font(28, 28);
+}
+
+li {
+    @include adaptive-font(20, 20);
+}
+
+span, p, a, button, input {
+    @include adaptive-font(18, 18);
+}
+
+
+
+// button styles
+
+.button {
+    cursor: pointer;
+    padding: 14px 20px;
+    border: none;
+    border-radius: none;
+}
+
+.button-white {
+    background-color: var(--main-white);
+}
+
+.button-black {
+    color: white;
+    background-color: var(--main-black);
+}
+
+
+// input styles 
+input {
+    border: none;
+    border-radius: none;
+    background-color: var(--main-white);
+    padding: 14px 193px 14px 16px;
+    line-height: 24px;
+    outline: none;
+
+    &::placeholder {
+        color: var(--main-black);
+    }
+}
+
+// form styles 
+form {
+    display: flex;
+}
