@@ -18,6 +18,7 @@ img {
 }
 
 * {
+  color: var(--main-black);
   font-family: "NeueMachina Regular" !important;
 }
 

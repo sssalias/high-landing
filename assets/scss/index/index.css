@@ -155,6 +155,9 @@ main {
   content: "per month";
   font-size: 30px;
 }
+.pricing .pricing-list .card .card-caption p {
+  font-size: calc(20px + 0 * (100vw - 320px) / 1280);
+}
 .pricing .pricing-list .card .card-footer {
   margin-top: auto;
   display: flex;
@@ -169,6 +172,9 @@ main {
   background-color: var(--main-black);
 }
 .pricing .pricing-list .card-black .list-item {
+  color: var(--main-white);
+}
+.pricing .pricing-list .card-black h1 {
   color: var(--main-white);
 }
 .pricing .pricing-list .card-bordered {

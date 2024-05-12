@@ -1,3 +1,5 @@
+@import '../mixins/font';
+
 body {
     background-color: var(--main-bg);
     overflow-x: hidden;
@@ -187,7 +189,7 @@ main {
                     }   
                 }
                 p {
-                    // @include adaptive-font(20, 20);
+                    @include adaptive-font(20, 20);
                 }
 
                 // TODO: CREATE ME
@@ -219,6 +221,10 @@ main {
             background-color: var(--main-black);
 
             .list-item {
+                color: var(--main-white);
+            }
+
+            h1 {
                 color: var(--main-white);
             }
         }
