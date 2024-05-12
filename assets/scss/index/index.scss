@@ -1,5 +1,6 @@
 body {
     background-color: var(--main-bg);
+    overflow-x: hidden;
 }
 
 .main-wrapper {
@@ -58,7 +59,7 @@ main {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding-right: 20%;
+        // padding-right: 20%;
 
         .offer-payment {
             display: flex;
@@ -124,6 +125,111 @@ main {
                     } 
                 }
             }
+        }
+    }
+}
+
+// pricing 
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 120px;
+    .pricing-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .pricing-content {
+            // padding-left: 10%;
+            .pricing-content-text {
+                align-items: flex-end;
+                text-align: end;
+                p {
+                    white-space: pre-wrap;
+                }
+            }
+        }
+    }
+    .pricing-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            position: relative;
+            padding: 50px;
+            width: 33%;
+            height: 640px;
+
+            .card-caption {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h1 {
+                    font-family: 'NeueMachina Ultrabold' !important;
+                    font-weight: bold;
+                    &::before {
+                        content: '$';
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                        padding-bottom: 20px;
+                    }
+                    &::after {
+                        content: 'per month';
+                        font-size: 30px;
+                    }   
+                }
+                p {
+                    // @include adaptive-font(20, 20);
+                }
+
+                // TODO: CREATE ME
+                // &::before {
+                //     content: '$';
+                //     position: absolute;
+                //     top: 30%;
+                //     left: 10%;
+                // }
+                // &::after {
+                //     content: 'per month';
+                //     position: absolute;
+                //     left: 35%;
+                //     bottom: 25%;
+                // }
+            }
+            .card-footer {
+                margin-top: auto;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                .button {
+                    flex-grow: 1;
+                }
+            }
+        }
+        .card-black {
+            color: var(--main-white) !important;
+            background-color: var(--main-black);
+
+            .list-item {
+                color: var(--main-white);
+            }
+        }
+        .card-bordered {
+            border: 1px solid var(--main-black);
+            background: none;
+        }
+        .card-white {
+            color: var(--main-black);
+            border: 1px solid var(--main-white);
+            background-color: var(--main-white);
         }
     }
 }

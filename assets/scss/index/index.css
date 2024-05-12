@@ -1,5 +1,6 @@
 body {
   background-color: var(--main-bg);
+  overflow-x: hidden;
 }
 
 .main-wrapper {
@@ -44,7 +45,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-right: 20%;
 }
 .offer .offer-content .offer-payment {
   display: flex;
@@ -98,4 +98,85 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 120px;
+}
+.pricing .pricing-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.pricing .pricing-wrapper .pricing-content .pricing-content-text {
+  align-items: flex-end;
+  text-align: end;
+}
+.pricing .pricing-wrapper .pricing-content .pricing-content-text p {
+  white-space: pre-wrap;
+}
+.pricing .pricing-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.pricing .pricing-list .card {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: relative;
+  padding: 50px;
+  width: 33%;
+  height: 640px;
+}
+.pricing .pricing-list .card .card-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pricing .pricing-list .card .card-caption h1 {
+  font-family: "NeueMachina Ultrabold" !important;
+  font-weight: bold;
+}
+.pricing .pricing-list .card .card-caption h1::before {
+  content: "$";
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.pricing .pricing-list .card .card-caption h1::after {
+  content: "per month";
+  font-size: 30px;
+}
+.pricing .pricing-list .card .card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.pricing .pricing-list .card .card-footer .button {
+  flex-grow: 1;
+}
+.pricing .pricing-list .card-black {
+  color: var(--main-white) !important;
+  background-color: var(--main-black);
+}
+.pricing .pricing-list .card-black .list-item {
+  color: var(--main-white);
+}
+.pricing .pricing-list .card-bordered {
+  border: 1px solid var(--main-black);
+  background: none;
+}
+.pricing .pricing-list .card-white {
+  color: var(--main-black);
+  border: 1px solid var(--main-white);
+  background-color: var(--main-white);
 }/*# sourceMappingURL=index.css.map */
